@@ -1,0 +1,158 @@
+/* Header */
+#header-img {
+  background-color: #c4c1a4;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main Section Review*/
+.review {
+  background-color: #c4c1a4;
+  color: #4a4a48;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 1fr 1fr;
+  padding-bottom: 45px;
+}
+
+#review-headline {
+  text-align: center;
+  grid-column: 1/4;
+  padding: 15px 0;
+}
+
+#review-img {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  max-width: 90%;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0.7;
+  padding-top: 15px;
+  padding-left: 5px;
+}
+
+#review-comment {
+  text-align: center;
+  font-size: 0.9rem;
+  grid-column-start: 2;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+#review-img-2 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  max-width: 90%;
+  height: auto;
+  border-radius: 50%;
+  opacity: 0.7;
+  padding: 15px 0 15px 5px;
+}
+
+#review-comment-2 {
+  text-align: center;
+  font-size: 0.9rem;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+/* Main Section Opening-hours */
+.opening-hours {
+  background-color: #c4c1a4;
+  color: #4a4a48;
+}
+
+#text-logo {
+  padding: 10px 0 10px 10px;
+  opacity: 0.8;
+}
+
+.opening {
+  text-align: center;
+  padding: 10px 0 15px 0;
+}
+
+.opening-hours dl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.opening-hours dt {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+#opening-hours-border {
+  border: solid 5px #9e9fa5;
+  border-radius: 25px;
+  width: 350px;
+  height: 400px;
+  margin-left: 5px;
+}
+
+
+/* Media Query */
+@media (min-width: 600px) {
+  .review {
+    padding-bottom: 0;
+    grid-template-rows: 0.25fr 1fr 0.9fr;
+  }
+
+  #review-comment {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  #review-comment,
+  #review-comment-2 {
+    font-size: 1rem;
+    margin: 0 35px;
+    padding: 15px 0 0 0;
+  }
+
+  #review-img-2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    margin: 0 30px;
+  }
+
+  #review-img-2,
+  #review-img {
+    max-width: 70%;
+    margin: 10px 35px;
+    padding: 0;
+  }
+
+  .opening-hours {
+    display: flex;
+    justify-content: center;
+  }
+
+  #opening-hours-border {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .review {
+    grid-template-rows: 0.25fr 1fr 0.5fr;
+  }
+
+  #review-comment,
+  #review-comment-2 {
+    max-width: 450px;
+    margin: 0 35px 0 25px;
+    padding: 15px 30px 0 0;
+  }
+
+  #review-img-2 {
+    margin: 0 30px 0 35px;
+  }
+}

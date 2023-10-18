@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="En hemsida för beställning till ett fiktivt bageri." />
+    <title>Beställ</title>
+    <link rel="stylesheet" href="order.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Länkar för att använda google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet" />
+    <!-- Länk för att kunna använda fontawesome ikoner -->
+    <script src="https://kit.fontawesome.com/3339578912.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <a href="index.html">
+            <img class="logo" src="images/cupcake.png" alt="Logga för bageriet i form av en cupcake" />
+          </a>
+        </div>
+        <ul class="menu">
+          <li class="info"><a href="#about-page2">Om oss</a></li>
+          <li class="info">
+            <a href="index.html#opening-hours">Öppettider</a>
+          </li>
+          <li class="info"><a href="order.html">Beställ</a></li>
+          <li class="info"><a href="#contact-page2">Kontakt</a></li>
+        </ul>
+      </nav>
+      <h1>Beställ din tårta eller bakelse här.</h1>
+    </header>
+    <main>
+      <section class="order">
+        <h2 id="sortiment">Välj bland vårt sortiment</h2>
+        <div class="cake-list">
+          <h3>Tårtor</h3>
+          <img class="order-img" src="images/chokladtårta.jpg" alt="Chokladtårta skuren i bitar" />
+          <ul>
+            <li>Choklad tårta: 6, 8, 12 & 14 bitar</li>
+            <li>Frukt tårta: 4, 6, & 8 bitar</li>
+            <li>Prinsess tårta: Rosa/Blå/Grön, 8 bitar</li>
+            <li>Cheesecake tårta: 6, 8, 12 & 14 bitar</li>
+            <li>Red Velvet-tårta: 6 & 8 bitar</li>
+          </ul>
+        </div>
+
+        <div class="patisserie-list">
+          <h3>Bakelser</h3>
+          <img class="order-img" src="images/tiramisu.jpg" alt="En bit tiramisu på ett fat" />
+          <ul>
+            <li>Chokladboll</li>
+            <li>Beskvi olika sorter</li>
+            <li>Mazarin</li>
+            <li>Macarons olika sorter</li>
+            <li>Tiramisu</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="form">
+        <h3 class="form-headline">Beställnings formulär</h3>
+        <fieldset class="form-fieldset">
+          <form method="post" class="form-order">
+            <label>
+              Förnamn*
+              <input type="text" name="firstname" id="firstname" placeholder="Förnamn" required />
+            </label>
+            <label>
+              Efternamn*
+              <input type="text" name="lastname" id="lastname" placeholder="Efternamn" required />
+            </label>
+            <label>
+              E-post*
+              <input type="email" name="email" id="email" placeholder="E-post" required />
+            </label>
+            <label>
+              Adress*
+              <input type="text" name="street" id="street" placeholder="Adress" required />
+            </label>
+
+            <label>
+              <!-- Tagit inspiration och hjälp från: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel -->
+              Mobilnummer i format (123-456-7891)*
+              <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123 - 456 - 78 - 90" required />
+            </label>
+            <label>
+              Något du vill att vi ska veta?
+              <textarea id="text-message" name="message" cols="45" rows="7" placeholder="Skriv här..."></textarea>
+            </label>
+          </form>
+        </fieldset>
+        <input id="button-submit" type="submit" value="Beställ" />
+      </section>
+    </main>
+
+    <footer>
+      <h2 id="about-page2" class="headline-about">Om Oss</h2>
+      <div class="about-us">
+        <p>Vi på Caked & Baked brinner för att skapa de mest läckra och minnesvärda bakverken sedan 1989. Med en passion för hantverk och en kärlek till traditionella recept har vi varit stolta att servera vår gemenskap i över 30 år.</p>
+        <p><strong>Tack</strong> för att du väljer Caked & Backed för dina bakverksbehov. Vi ser fram emot att fortsätta att föra glädje och smak till ditt liv och din familj i många år framöver.</p>
+      </div>
+
+      <aside class="footer-logo">
+        <a class="instagram-button" href="https://www.instagram.com/">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="facebook-button" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a class="linkedin-button" href="https://www.linkedin.com/in/elma-vila-3a1962289/"><i class="fa-brands fa-linkedin"></i></a>
+      </aside>
+
+      <address id="contact-page2" class="location">
+        <span>Dennagatan 13 , 123 44 Göteborg</span>
+        <span>Tele: 000 - 122 - 34 - 56</span>
+        <span>Copyright © 2023</span>
+      </address>
+    </footer>
+  </body>
+</html>

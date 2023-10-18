@@ -1,0 +1,239 @@
+/* CSS reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+body {
+    font-family: "Handlee", cursive;
+    font-family: "Playfair Display", serif;
+    color: #4a4a48;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color: #c4c1a4;
+    color: #4a4a48;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff6dc;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.info {
+    flex: 1 0 50%;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    color: #003049;
+    transition: all ease-in-out 0.3s;
+    position: relative;
+}
+
+.menu a:hover {
+    background-color: #ffc6ac;
+    text-decoration: underline;
+}
+
+.logo {
+    height: 40px;
+    padding-left: 10px;
+}
+
+/* Main Section Order */
+.order {
+    color: #4a4a48;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.order * {
+    list-style: circle;
+}
+
+.cake-list,
+.patisserie-list {
+    margin: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #9e9fa5;
+    color: #003049;
+    text-align: center;
+}
+
+.headline-about {
+    padding-top: 30px;
+}
+
+.about-us {
+    margin: 35px 35px 0 35px;
+    padding-bottom: 35px;
+}
+
+.fa-brands,
+fa-instagram,
+fa-brands,
+fa-facebook,
+fa-brands,
+fa-linkedin {
+    color: #ffc6ac;
+    font-size: 30px;
+}
+
+.instagram-button:hover,
+.linkedin-button:hover,
+.facebook-button:hover {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.location {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact.location,
+#contact-page2.location {
+    white-space: pre-line;
+}
+
+
+/* Media Query */
+@media(min-width: 600px) {
+    .menu {
+        width: 100%;
+    }
+
+    .info {
+        flex: 1 0 10%;
+    }
+
+    .logo {
+        margin: 15px 10px;
+    }
+
+    #sortiment {
+     width: 750px;
+
+    }
+
+    .order {
+        flex-direction: row;
+        margin-left: 10px;
+    }
+
+    #supply {
+        align-self: flex-start;
+        padding-right: 20px;
+    }
+
+    .location {
+        padding: 0 80px 20px 80px;
+        margin: 0 20px 0 45px;
+    }
+}
+
+@media (min-width: 900px) {
+    .headline-about {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+
+    }
+
+    .order {
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+
+    #sortiment {
+        width: 750px;
+    }
+
+    .cake-list,
+    .patisserie-list {
+        padding-left: 50px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 0.1fr repeat(1, 1fr);
+    }
+
+    #about {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        justify-content: end;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    #about-page2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        justify-content: end;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .about-us {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 20px;
+        justify-content: end;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .footer-logo {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row: 1;
+        align-items: end;
+        padding-bottom: 0px;
+    }
+
+    .location {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        margin: 0;
+        padding: 0;
+    }
+}

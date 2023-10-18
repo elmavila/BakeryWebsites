@@ -1,0 +1,61 @@
+/* Main Section Order */
+#text-message {
+    height: 100px;
+    width: 300px;
+}
+
+.order-img {
+    max-width: 40%;
+    border-radius: 90%;
+}
+
+/* Form */
+.form-headline {
+    margin: 25px 0 15px 0;
+}
+
+.form {
+    background-color: #c4c1a4;
+}
+
+.form-order {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px 0 10px 10px;
+}
+
+.form-fieldset {
+    border: none;
+}
+
+#button-submit {
+    margin: 5px 0 10px 10px;
+    padding: 10px;
+}
+
+@media (min-width: 600px) {
+    .order-img {
+        max-width: 70%;
+    }
+
+    #text-message {
+        width: 500px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 900px) {
+    .order-img {
+        max-width: 60%;
+    }
+
+    #sortiment {
+        margin-left: 15px;
+    }
+
+    #text-message {
+        width: 780px;
+        height: 200px;
+    }
+}
